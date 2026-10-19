@@ -9,8 +9,23 @@ import {
   MARKETPLACE_TOOL_NAMES,
   type MarketplaceToolsDeps,
 } from './marketplace.tools';
+import {
+  buildModerationTools,
+  MODERATION_TOOL_NAMES,
+  type ModerationToolsDeps,
+} from './moderation.tools';
+import {
+  buildCreatorCopilotTools,
+  CREATOR_COPILOT_TOOL_NAMES,
+  type CreatorCopilotToolsDeps,
+} from './creator-copilot.tools';
+import {
+  buildTradingTools,
+  TRADING_TOOL_NAMES,
+  type TradingToolsDeps,
+} from './trading.tools';
 
-const registry = new Map<ToolSetName, ToolSetRegistration>();
+const registry = new Map<ToolSetName, ToolSetRegistration<any>>();
 
 /**
  * Registers a tool set builder along with the exact tool names it's allowed
@@ -39,6 +54,24 @@ registerToolSet<MarketplaceToolsDeps>(
   'marketplace-assistant',
   buildMarketplaceTools,
   MARKETPLACE_TOOL_NAMES,
+);
+
+registerToolSet<ModerationToolsDeps>(
+  'moderation',
+  buildModerationTools,
+  MODERATION_TOOL_NAMES,
+);
+
+registerToolSet<CreatorCopilotToolsDeps>(
+  'creator-copilot',
+  buildCreatorCopilotTools,
+  CREATOR_COPILOT_TOOL_NAMES,
+);
+
+registerToolSet<TradingToolsDeps>(
+  'trading',
+  buildTradingTools,
+  TRADING_TOOL_NAMES,
 );
 
 /**

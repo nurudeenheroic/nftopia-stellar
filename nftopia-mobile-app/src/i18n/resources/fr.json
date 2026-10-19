@@ -130,7 +130,8 @@
     "signOut": "Se déconnecter",
     "signOutConfirm": "Êtes-vous sûr de vouloir vous déconnecter ?",
     "signOutCancel": "Annuler",
-    "signOutConfirmButton": "Se déconnecter"
+    "signOutConfirmButton": "Se déconnecter",
+    "favorites": "Favorites"
   },
   "wallet": {
     "title": "Portefeuille",
@@ -164,7 +165,21 @@
   "marketplace": {
     "title": "Marché",
     "searchPlaceholder": "Rechercher des NFTs...",
-    "filters": "Filtres",
+    "filters": {
+      "trigger": "Filtres",
+      "title": "Filtres",
+      "category": "Catégorie",
+      "status": "Statut",
+      "statusAll": "Tous",
+      "statusActive": "Actif",
+      "statusSold": "Vendu",
+      "priceRange": "Fourchette de prix (XLM)",
+      "minPrice": "Min",
+      "maxPrice": "Max",
+      "apply": "Appliquer les filtres",
+      "clearAll": "Tout effacer",
+      "priceRangeInvalid": "Le prix minimum ne peut pas être supérieur au prix maximum"
+    },
     "sortBy": "Trier par",
     "newest": "Plus récents",
     "oldest": "Plus anciens",
@@ -180,6 +195,10 @@
     "collection": "Collection",
     "noNFTs": "Aucun NFT trouvé",
     "noNFTsMessage": "Essayez d'ajuster votre recherche ou vos filtres",
+    "emptyNoData": "Aucun NFT listé pour le moment",
+    "emptyNoDataMessage": "Revenez bientôt pour voir de nouvelles annonces",
+    "loadError": "Échec du chargement des NFTs",
+    "loadErrorMessage": "Veuillez vérifier votre connexion et réessayer",
     "viewDetails": "Voir les détails"
   },
   "nft": {
@@ -285,5 +304,22 @@
     "long": "DD MMMM YYYY",
     "time": "HH:mm",
     "datetime": "DD MMMM YYYY HH:mm"
+  },
+  "favorites": {
+    "title": "Favoris",
+    "nfts": "NFTs",
+    "collections": "Collections",
+    "removeTitle": "Retirer le favori",
+    "removeMessage": "Retirer ce NFT de vos favoris ?",
+    "removeConfirm": "Retirer",
+    "removeCollectionTitle": "Retirer le favori",
+    "removeCollectionMessage": "Retirer cette collection de vos favoris ?",
+    "emptyNftsTitle": "Aucun NFT favori",
+    "emptyNftsMessage": "Touchez le cœur sur un NFT pour l'enregistrer ici.",
+    "browseNfts": "Parcourir les NFTs",
+    "emptyCollectionsTitle": "Aucune collection favorite",
+    "emptyCollectionsMessage": "Touchez le cœur sur une collection pour l'enregistrer ici.",
+    "browseCollections": "Parcourir les collections",
+    "nftCountLabel": "NFTs"
   }
 }
